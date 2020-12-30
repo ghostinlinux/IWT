@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        	#d1{border:5px solid red;
+				height:100px;
+				width:400px;
+				background-image: radial-gradient(black, blue, red, yellow, purple, black);
+                margin: 40px auto 0 auto;
+                transition-property: width, height;
+                /* transform:matrix(0, 0, 0); */
+                transform: rotate(-30deg);
+                /* transition-property: all; */
+                transition-duration: 10s;
+                /* transition-delay: 2s, 5s; */
+                /* transition-timing-function: ease-in; */
+                /* transition-timing-function: steps(5, end); */
+                /* transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+				}
+            #d1:hover{ 
+                       /* height: 500px; */
+                       /* width: 500px; */
+                       transform: rotate(30deg);
+                       /* transform: translate(30px, 50px); */
+                       /* transform: scaleX(2); */
+                       /* transform: skew(30deg, 20deg); */
+                       /* transform: matrix(1,2,3,4,5,6); */
+                       /* transform: rotate(180deg); */
+            }
+    </style>
+</head>
+<body>
+    <div id="d1">
+    </div>
+</body>
+</html>

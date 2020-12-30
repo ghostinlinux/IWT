@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External js -- a.js is a external file -->
+    <script src="a.js"></script> 
+
+    <!-- Internal js -->
+    
+    <script>
+        function abc(){
+
+            var aa=document.getElementById("b").value;
+            if(aa%2==0)
+            document.getElementById("a").innerHTML=aa+ "  It is a even no."
+            else
+            document.getElementById("a").innerHTML=aa+ "  It is not a even no."
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="b">
+    <button type="submit" onclick="abc()">Click!!!</button>
+    <p id="a"></p>
+</body>
+</html>

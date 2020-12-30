@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{background-color: rgb(233, 233, 220);}
+
+        #d1{border: 5px solid red;
+            height: 200px;
+            width: 200px;
+            /* background-color: pink; */
+            margin: 40px auto 0 auto;
+
+            animation-name: abd;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes abd{
+            from{border-radius: 0%;}
+            to{border-radius: 50%; background-color: blue;}
+        }
+
+        #d2{
+            border: 5px solid green;
+            height: 100px;
+            width: 100px;
+            margin: 40px auto;
+
+            animation-name: abc;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes abc{
+            from{border-radius: 0%;}
+            to{border-radius: 50%; background-color: silver;}
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <div id="d2"> <center style="margin-top: 40px; color: gold;"> Hello</center> </div>
+    </div>
+</body>
+</html>
